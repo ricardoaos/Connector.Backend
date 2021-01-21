@@ -29,5 +29,11 @@
     <ProjectReference Include="..\Connector.Backend.Infra.Data.SQLServer\Connector.Backend.Infra.Data.SQLServer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="logs\" />
+    <Folder Include="Rpt\" />
+    <Folder Include="Views\Relatorios\" />
+  </ItemGroup>
+
 
 </Project>
