@@ -1,7 +1,6 @@
 ﻿using Connector.Backend.Domain.DomainServices;
 using Connector.Backend.Domain.Interfaces.DomainServices;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 
 namespace Connector.Backend.Domain
 {

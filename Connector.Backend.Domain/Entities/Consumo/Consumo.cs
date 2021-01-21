@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Connector.Backend.Domain.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Tnf.Notifications;

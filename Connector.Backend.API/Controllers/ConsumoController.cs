@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Connector.Backend.Shared;
+using Connector.Backend.Application.Interfaces;
+using Connector.Backend.DTO.DTOs;
+using Connector.Backend.DTO.Requests.Consumo;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +12,12 @@ using Tnf.Dto;
 
 namespace Connector.Backend.API.Controllers
 {
-    public class ConsumoController : Controller
+    [Route(WebConstants.ConsumoName)]
+    public class ConsumoController : TnfController
     {
         private readonly IConsumoAppService _appService;
 
-        public DominioController(IConsumoAppService appService)
+        public ConsumoController(IConsumoAppService appService)
         {
             _appService = appService;
         }
@@ -39,7 +44,7 @@ namespace Connector.Backend.API.Controllers
 
             var response = await _appService.GetAllWithDomainAsync(request);
 
-            return CreateResponseOnGetAll(response, WebConstants.DominioRouteName);
+            return CreateResponseOnGetAll(response, WebConstants.ConsumoName);
         }
     }
 }

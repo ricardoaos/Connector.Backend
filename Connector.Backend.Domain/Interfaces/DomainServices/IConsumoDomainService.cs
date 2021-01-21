@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Connector.Backend.DTO.DTOs;
+using Connector.Backend.DTO.Requests.Consumo;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
