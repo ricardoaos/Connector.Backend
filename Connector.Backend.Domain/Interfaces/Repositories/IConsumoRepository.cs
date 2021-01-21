@@ -13,9 +13,7 @@ using Tnf.Repositories;
 namespace Connector.Backend.Domain.Interfaces.Repositories
 {
     public interface IConsumoRepository : IRepository
-    {        
-        Task<IListDto<ConsumoDTO>> GetAllAsync(SearchRequestAllDTO request);        
-        Task<ConsumoDTO> GetAsync(DefaultRequestDto key);
-        Task<Consumo> FindByIdAsync(long Id);
+    {
+        Task<IListDto<ConsumoDTO>> GetAllAsync(SearchRequestAllDTO request);
     }
 }

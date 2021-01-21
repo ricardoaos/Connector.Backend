@@ -1,11 +1,10 @@
 ﻿using Connector.Backend.Domain.DomainServices;
 using Connector.Backend.Domain.Interfaces.DomainServices;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 
 namespace Connector.Backend.Domain
 {
-    public class ServiceCollectionExtensions
+    public static class ServiceCollectionExtensions
     {
         public static IServiceCollection AddDomainDependency(this IServiceCollection services)
         {

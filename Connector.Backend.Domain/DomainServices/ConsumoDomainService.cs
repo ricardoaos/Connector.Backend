@@ -16,7 +16,7 @@ using Tnf.Notifications;
 
 namespace Connector.Backend.Domain.DomainServices
 {
-    public class ConsumoDomainService : DomainService, IConsumoDomainService
+    public class ConsumoDomainService : DomainService
     {
         protected readonly IConsumoRepository _repository;
 
@@ -25,12 +25,10 @@ namespace Connector.Backend.Domain.DomainServices
         {
             _repository = repository;
         }
-      
-        public async virtual Task<IListDto<ConsumoDTO>> GetAllAsync(SearchRequestAllDTO request) =>
-            await _repository.GetAllAsync(request);        
 
-        public async virtual Task<ConsumoDTO> GetAsync(DefaultRequestDto key) =>
-            await _repository.GetAsync(key);
+
+        //public async virtual Task<IListDto<ConsumoDTO>> GetAllAsync(SearchRequestAllDTO request) =>
+        //           await _repository.GetAllAsync(request);
 
         protected Consumo BuildEntity(Consumo.Builder builder) =>
             builder.Build();
