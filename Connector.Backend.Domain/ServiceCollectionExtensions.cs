@@ -5,7 +5,7 @@ using System;
 
 namespace Connector.Backend.Domain
 {
-    public class ServiceCollectionExtensions
+    public static class ServiceCollectionExtensions
     {
         public static IServiceCollection AddDomainDependency(this IServiceCollection services)
         {

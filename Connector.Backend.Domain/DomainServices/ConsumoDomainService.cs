@@ -27,7 +27,7 @@ namespace Connector.Backend.Domain.DomainServices
         }
       
         public async virtual Task<IListDto<ConsumoDTO>> GetAllAsync(SearchRequestAllDTO request) =>
-            await _repository.GetAllAsync(request);        
+            await _repository.GetAllAsync(request); 
 
         public async virtual Task<ConsumoDTO> GetAsync(DefaultRequestDto key) =>
             await _repository.GetAsync(key);
