@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connector.Backend.DTO", "Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connector.Backend.Shared", "Connector.Backend.Shared\Connector.Backend.Shared.csproj", "{B60C578C-9160-4BAC-8423-67CB26FFD1BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HangFire", "HangFire\HangFire.csproj", "{C8FF8993-B512-44A5-9208-5C580F00C60E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HangFire", "HangFire\HangFire.csproj", "{C8FF8993-B512-44A5-9208-5C580F00C60E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connector.Backend.Http", "FiscalPrime.Backend.Http\Connector.Backend.Http.csproj", "{7D6408BB-B133-422E-9EFA-112060EFDEA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,10 @@ Global
 		{C8FF8993-B512-44A5-9208-5C580F00C60E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8FF8993-B512-44A5-9208-5C580F00C60E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8FF8993-B512-44A5-9208-5C580F00C60E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D6408BB-B133-422E-9EFA-112060EFDEA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D6408BB-B133-422E-9EFA-112060EFDEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D6408BB-B133-422E-9EFA-112060EFDEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D6408BB-B133-422E-9EFA-112060EFDEA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +93,7 @@ Global
 		{54BAD013-4903-458A-9393-D723082DC0EF} = {3D462E99-3441-417C-A09D-08D19D53DA6A}
 		{B60C578C-9160-4BAC-8423-67CB26FFD1BA} = {3D462E99-3441-417C-A09D-08D19D53DA6A}
 		{C8FF8993-B512-44A5-9208-5C580F00C60E} = {63EB930D-08B4-457C-BDDE-F89EBFB18EDA}
+		{7D6408BB-B133-422E-9EFA-112060EFDEA8} = {3D462E99-3441-417C-A09D-08D19D53DA6A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FFC0CBB6-D20D-47E8-AC65-7A3061DE9167}

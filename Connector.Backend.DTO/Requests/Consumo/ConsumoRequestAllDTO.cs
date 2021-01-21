@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Connector.Backend.Shared;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
