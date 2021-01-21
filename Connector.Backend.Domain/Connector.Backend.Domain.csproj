@@ -8,4 +8,9 @@
     <PackageReference Include="Tnf.Domain" Version="3.2.0.31002" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Connector.Backend.DTO\Connector.Backend.DTO.csproj" />
+    <ProjectReference Include="..\Connector.Backend.Shared\Connector.Backend.Shared.csproj" />
+  </ItemGroup>
+
 </Project>
