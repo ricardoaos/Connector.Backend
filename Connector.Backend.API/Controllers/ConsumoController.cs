@@ -10,9 +10,9 @@ namespace Connector.Backend.API.Controllers
 {
     public class ConsumoController : Controller
     {
-        private readonly IDominioExternoAppService _appService;
+        private readonly IConsumoAppService _appService;
 
-        public DominioController(IDominioExternoAppService appService)
+        public DominioController(IConsumoAppService appService)
         {
             _appService = appService;
         }
@@ -23,12 +23,12 @@ namespace Connector.Backend.API.Controllers
         /// </summary>
         /// <returns>List</returns>
         [HttpGet]
-        [ProducesResponseType(typeof(IListDto<DominioExternoDTO>), 200)]
+        [ProducesResponseType(typeof(IListDto<ConsumoDTO>), 200)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
         public async Task<IActionResult> GetAll([FromQuery] string filter, [FromQuery] Constants.Dominio dominio, [FromQuery] string uf)
         {
 
-            DominioExternoRequestAllDTO request = new DominioExternoRequestAllDTO
+            ConsumoRequestAllDTO request = new ConsumoRequestAllDTO
             {
                 IdDominio = dominio,
                 Page = 1,
