@@ -18,4 +18,8 @@
     <PackageReference Include="Tnf.EntityFrameworkCore" Version="3.0.2.33701" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Connector.Backend.Domain\Connector.Backend.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
