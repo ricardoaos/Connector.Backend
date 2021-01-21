@@ -23,5 +23,17 @@
     <PackageReference Include="Tnf.AspNetCore.Security" Version="3.2.0.31002" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Connector.Backend.Application\Connector.Backend.Application.csproj" />
+    <ProjectReference Include="..\Connector.Backend.DTO\Connector.Backend.DTO.csproj" />
+    <ProjectReference Include="..\Connector.Backend.Infra.Data.SQLServer\Connector.Backend.Infra.Data.SQLServer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="logs\" />
+    <Folder Include="Rpt\" />
+    <Folder Include="Views\Relatorios\" />
+  </ItemGroup>
+
 
 </Project>
