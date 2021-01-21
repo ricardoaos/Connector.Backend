@@ -1,4 +1,8 @@
 ﻿using Connector.Backend.Domain.Entities.Consumo;
+using Connector.Backend.DTO.DTOs;
+using Connector.Backend.DTO.Requests;
+using Connector.Backend.DTO.Requests.Consumo;
+using Connector.Backend.DTO.Requests.RequestAll;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,12 +13,8 @@ using Tnf.Repositories;
 namespace Connector.Backend.Domain.Interfaces.Repositories
 {
     public interface IConsumoRepository : IRepository
-    {
-        Task<Consumo> InsertAsync(Consumo entity);
-        Task<Consumo> UpdateAsync(Consumo entity);
-        Task<bool> DeleteAsync(long Id);
-        Task<IListDto<ConsumoDTO>> GetAllAsync(SearchRequestAllDTO request);
-        Task<IListDto<ConsumoDTO>> GetAllWithDomain(ConsumoRequestAllDTO request);
+    {        
+        Task<IListDto<ConsumoDTO>> GetAllAsync(SearchRequestAllDTO request);        
         Task<ConsumoDTO> GetAsync(DefaultRequestDto key);
         Task<Consumo> FindByIdAsync(long Id);
     }

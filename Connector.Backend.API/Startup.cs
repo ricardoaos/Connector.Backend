@@ -1,13 +1,9 @@
-using Connector.Backend.Application;
-using Connector.Backend.Domain.Interfaces;
 using Connector.Backend.API.HostedServices;
 using Connector.Backend.API.Middleware;
-using Connector.Backend.Application;
 using Connector.Backend.Domain.Configurations;
 using Connector.Backend.Domain.Interfaces;
 using Connector.Backend.DTO.Requests;
-using Connector.Backend.Infra.Data.Context.Configurations;
-using Connector.Backend.Infra.Data.PostgreSQL;
+//using Connector.Backend.Infra.Data.Context.Configurations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -30,8 +26,6 @@ namespace Connector.Backend.API
             DatabaseConfiguration = new DatabaseConfiguration(configuration);
             RacConfiguration = new RacConfiguration(configuration);
         }
-
-        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -65,7 +59,6 @@ namespace Connector.Backend.API
                 .AddTnfAspNetCoreSecurity(Configuration);
 
             services.AddSingleton(RacConfiguration);
-            services.AddPostgreSQLDependency();
             services.AddHostedService<MigrationHostedService>();
 
             services
@@ -128,6 +121,5 @@ namespace Connector.Backend.API
                 endpoints.MapDefaultControllerRoute();
             });
         }
-    }
     }
 }

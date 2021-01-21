@@ -12,4 +12,8 @@
     <Folder Include="Context\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Connecto.Backend.Infra\Connector.Backend.Infra.csproj" />
+  </ItemGroup>
+
 </Project>
