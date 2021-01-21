@@ -1,4 +1,12 @@
 ﻿using Connector.Backend.Domain.Configurations;
+using Connector.Backend.Domain.Entities.Consumo;
+using Connector.Backend.Domain.Interfaces.DomainServices;
+using Connector.Backend.Domain.Interfaces.Repositories;
+using Connector.Backend.DTO.DTOs;
+using Connector.Backend.DTO.DTOs.Rac;
+using Connector.Backend.DTO.Requests;
+using Connector.Backend.DTO.Requests.Consumo;
+using Connector.Backend.DTO.Requests.RequestAll;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,59 +25,12 @@ namespace Connector.Backend.Domain.DomainServices
         {
             _repository = repository;
         }
-
-        public async virtual Task<bool> DeleteAsync(long Id) =>
-           await _repository.DeleteAsync(Id);
-
-        public async virtual Task<Consumo> FindByIdAsync(long Id) =>
-            await _repository.FindByIdAsync(Id);
-
-
-
+      
         public async virtual Task<IListDto<ConsumoDTO>> GetAllAsync(SearchRequestAllDTO request) =>
-            await _repository.GetAllAsync(request);
-
-        public async virtual Task<IListDto<ConsumoDTO>> GetAllWithDomain(ConsumoRequestAllDTO request)
-        {
-            return await _repository.GetAllWithDomain(request);
-        }
+            await _repository.GetAllAsync(request);        
 
         public async virtual Task<ConsumoDTO> GetAsync(DefaultRequestDto key) =>
             await _repository.GetAsync(key);
-
-        public virtual async Task<Consumo> InsertAsync(Consumo.Builder builder)
-        {
-            if (builder == null)
-            {
-                Notification.RaiseError(Constants.LocalizationSourceName,
-                    Error.DomainServiceOnUpdateNullBuilderError);
-                return default;
-            }
-
-            var entity = BuildEntity(builder);
-
-            if (Notification.HasNotification())
-                return default;
-
-            return await _repository.InsertAsync(entity);
-        }
-
-        public virtual async Task<Consumo> UpdateAsync(Consumo.Builder builder)
-        {
-            if (builder == null)
-            {
-                Notification.RaiseError(Constants.LocalizationSourceName,
-                    Error.DomainServiceOnUpdateNullBuilderError);
-                return default;
-            }
-
-            var entity = BuildEntity(builder);
-
-            if (Notification.HasNotification())
-                return default;
-
-            return await _repository.UpdateAsync(entity);
-        }
 
         protected Consumo BuildEntity(Consumo.Builder builder) =>
             builder.Build();

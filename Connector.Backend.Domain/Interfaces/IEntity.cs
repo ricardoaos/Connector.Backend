@@ -9,4 +9,3 @@ namespace Connector.Backend.Domain.Interfaces
         long Id { get; set; }
     }
 }
-}
