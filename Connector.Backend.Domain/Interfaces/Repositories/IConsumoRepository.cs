@@ -1,7 +1,6 @@
 ﻿using Connector.Backend.Domain.Entities.Consumo;
 using Connector.Backend.DTO.DTOs;
 using Connector.Backend.DTO.Requests;
-using Connector.Backend.DTO.Requests.Consumo;
 using Connector.Backend.DTO.Requests.RequestAll;
 using System;
 using System.Collections.Generic;

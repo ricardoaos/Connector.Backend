@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Tnf.Dto;
+﻿using Tnf.Dto;
 
 namespace Connector.Backend.DTO.Requests.RequestAll
 {

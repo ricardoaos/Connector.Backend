@@ -6,7 +6,7 @@ using System;
 
 namespace Connector.Backend.Application
 {
-    public class ServiceCollectionExtensions
+    public static class ServiceCollectionExtensions
     {
         public static IServiceCollection AddApplicationServiceDependency(this IServiceCollection services)
         {

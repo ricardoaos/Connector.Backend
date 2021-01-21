@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Connector.Backend.DTO.Requests.Consumo
+namespace Connector.Backend.DTO.Requests.RequestAll
 {
     public class ConsumoRequestAllDTO : SearchRequestAllDTO
     {

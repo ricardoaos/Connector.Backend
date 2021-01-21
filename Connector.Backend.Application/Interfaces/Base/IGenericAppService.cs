@@ -1,7 +1,11 @@
-﻿using System;
+﻿using Connector.Backend.DTO.Requests;
+using Connector.Backend.DTO.Requests.RequestAll;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Tnf.Application.Services;
+using Tnf.Dto;
 
 namespace Connector.Backend.Application.Interfaces.Base
 {
