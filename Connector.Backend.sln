@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connector.Backend.API", "Connector.Backend.API\Connector.Backend.API.csproj", "{22BA046C-B552-4BE5-88F5-25C9F71C26FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - Shared", "00 - Shared", "{3D462E99-3441-417C-A09D-08D19D53DA6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Domain", "01 - Domain", "{94D8D1A0-093E-4BBD-8D11-402F623AB7DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Infra", "02 - Infra", "{DCAEBE79-A859-40E1-A10C-D4D77F6B01C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 -Application", "03 -Application", "{079C0A0E-FFE7-41F6-A607-0D3A4CDCE6D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 -API", "04 -API", "{FD812D17-9BC7-495D-AFCE-4E9BE014070F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Tests", "05 - Tests", "{946126AE-87CE-408E-8142-DB95350D91D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Reports", "06 - Reports", "{2989EE84-9C35-4EDF-B113-8217E1A234C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 - HangFire", "07 - HangFire", "{63EB930D-08B4-457C-BDDE-F89EBFB18EDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2EBBDB3D-B7B1-42D8-818A-682DE2FCA70D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22BA046C-B552-4BE5-88F5-25C9F71C26FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22BA046C-B552-4BE5-88F5-25C9F71C26FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22BA046C-B552-4BE5-88F5-25C9F71C26FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22BA046C-B552-4BE5-88F5-25C9F71C26FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22BA046C-B552-4BE5-88F5-25C9F71C26FB} = {FD812D17-9BC7-495D-AFCE-4E9BE014070F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFC0CBB6-D20D-47E8-AC65-7A3061DE9167}
+	EndGlobalSection
+EndGlobal
