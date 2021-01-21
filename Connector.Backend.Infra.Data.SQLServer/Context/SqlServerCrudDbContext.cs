@@ -1,5 +1,4 @@
-﻿using Connector.Backend.Infra.Data.SQLServer;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Tnf.Runtime.Session;
 
 namespace BasicCrud.Infra.SqlServer.Context

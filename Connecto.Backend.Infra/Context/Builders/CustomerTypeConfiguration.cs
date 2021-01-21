@@ -1,17 +1,17 @@
-﻿using BasicCrud.Domain.Entities;
+﻿using Connector.Backend.Domain.Entities.Consumo;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace BasicCrud.Infra.Context.Builders
 {
-    public class CustomerTypeConfiguration : IEntityTypeConfiguration<Customer>
+    public class CustomerTypeConfiguration : IEntityTypeConfiguration<Consumo>
     {
-        public void Configure(EntityTypeBuilder<Customer> builder)
+        public void Configure(EntityTypeBuilder<Consumo> builder)
         {
-            builder.ToTable("Customers");
+            builder.ToTable("Consumo");
 
             builder.HasKey(k => k.Id);
-            builder.Property(p => p.Name).IsRequired();
+            builder.Property(p => p.Ativo).IsRequired();
         }
     }
 }
