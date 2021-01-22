@@ -1,18 +1,15 @@
-﻿using Connector.Backend.DTO;
-using Connector.Backend.DTO.Customer;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
-using Tnf.Application.Services;
+using Connector.Backend.DTO.DTOs;
 using Tnf.Dto;
+using Connector.Backend.DTO.Requests.RequestAll;
 
-namespace Connector.Backend.Application.Services.Interfaces
+namespace Connector.Backend.Application.Interfaces
 {
-    public interface ICustomerAppService : IApplicationService
+    public interface IConsumoAppService
     {
-        Task<IListDto<CustomerDto>> GetAllAsync(CustomerRequestAllDto request);
-        Task<CustomerDto> GetAsync(DefaultRequestDto request);
-        Task<CustomerDto> CreateAsync(CustomerDto customerDto);
-        Task<CustomerDto> UpdateAsync(Guid id, CustomerDto customerDto);
-        Task DeleteAsync(Guid id);
+        Task<IListDto<ConsumoDTO>> GetAllWithDomainAsync(ConsumoRequestAllDTO request);
     }
 }

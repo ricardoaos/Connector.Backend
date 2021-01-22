@@ -49,7 +49,7 @@ namespace Connector.Backend.Web.Controllers
         [ProducesResponseType(typeof(ProductDto), 200)]
         [ProducesResponseType(404)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public async Task<IActionResult> Get(Guid id, [FromQuery]RequestDto requestDto)
+        public async Task<IActionResult> Get(long id, [FromQuery]RequestDto requestDto)
         {
             var request = new DefaultRequestDto(id, requestDto);
 
@@ -82,7 +82,7 @@ namespace Connector.Backend.Web.Controllers
         [HttpPut("{id}")]
         [ProducesResponseType(typeof(ProductDto), 200)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public async Task<IActionResult> Put(Guid id, [FromBody]ProductDto productDto)
+        public async Task<IActionResult> Put(long id, [FromBody]ProductDto productDto)
         {
             productDto = await _appService.UpdateProductAsync(id, productDto);
 
@@ -98,7 +98,7 @@ namespace Connector.Backend.Web.Controllers
         [HttpPatch("{id}")]
         [ProducesResponseType(typeof(ProductDto), 200)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public async Task<IActionResult> Patch(Guid id, [FromBody] JsonPatchDocument patch)
+        public async Task<IActionResult> Patch(long id, [FromBody] JsonPatchDocument patch)
         {
             var productDto = await _appService.PatchProductAsync(id, patch);
 
@@ -127,7 +127,7 @@ namespace Connector.Backend.Web.Controllers
         [HttpDelete("{id}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete(long id)
         {
             await _appService.DeleteProductAsync(id);
 
