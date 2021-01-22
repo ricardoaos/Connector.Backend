@@ -1,8 +1,15 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
+using Connector.Backend.Domain;
+using BasicCrud.Infra.Context;
+using BasicCrud.Infra.SqlServer.Context;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Connector.Backend.Infra.Data.SQLServer
 {
-    public class ServiceCollectionExtensions
+    public static class ServiceCollectionExtensions
     {
         public static IServiceCollection AddSQLServerDependency(this IServiceCollection services)
         {

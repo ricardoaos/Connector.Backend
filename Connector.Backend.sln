@@ -24,9 +24,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connector.Backend.Application", "Connector.Backend.Application\Connector.Backend.Application.csproj", "{E652E0FC-E712-410D-8EB9-FEAFCACA9521}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.1 - Data", "02.1 - Data", "{9A3A38AB-9440-4CDE-933F-9F3F261B673A}"
-	ProjectSection(SolutionItems) = preProject
-		CrudDbContext.cs = CrudDbContext.cs
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.1.1 - Connectors", "02.1.1 - Connectors", "{97313A66-63CB-4C16-A31E-865357E3B4E9}"
 EndProject
@@ -48,7 +45,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connector.Backend.Infra", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 - HangFire", "07 - HangFire", "{DE8DC05D-36B8-47A0-A906-978EF25D3659}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connector.Backend.HangFire", "Connector.Backend.HangFire\Connector.Backend.HangFire.csproj", "{D5803E1A-E3FE-47B3-8BD8-5590F35F82C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connector.Backend.HangFire", "Connector.Backend.HangFire\Connector.Backend.HangFire.csproj", "{D5803E1A-E3FE-47B3-8BD8-5590F35F82C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

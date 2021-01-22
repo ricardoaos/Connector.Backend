@@ -10,11 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\Reports\" />
-    <Folder Include="DTOs\Rac\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Connector.Backend.Shared\Connector.Backend.Shared.csproj" />
   </ItemGroup>
 

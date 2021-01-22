@@ -1,10 +1,11 @@
-using BasicCrud.Domain.Entities;
-using BasicCrud.Infra.Context.Builders;
+using Connector.Backend.Domain.Entities;
+using Connector.Backend.Infra.Context;
+using Connector.Backend.DTO;
 using Microsoft.EntityFrameworkCore;
 using Tnf.EntityFrameworkCore;
 using Tnf.Runtime.Session;
 
-namespace BasicCrud.Infra.Context
+namespace Connector.Backend.Infra.Context
 {
     public abstract class CrudDbContext : TnfDbContext
     {

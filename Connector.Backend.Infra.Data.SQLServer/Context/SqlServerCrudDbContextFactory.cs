@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using System.IO;
 using Tnf.Runtime.Session;
 
-namespace BasicCrud.Infra.SqlServer.Context
+namespace Connector.Backend.Infra.SqlServer.Context
 {
     public class SqlServerCrudDbContextFactory : IDesignTimeDbContextFactory<SqlServerCrudDbContext>
     {

@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BasicCrud.Infra.Context.Builders
+namespace Connector.Backend.Infra.Context.Builders
 {
     public class CustomerTypeConfiguration : IEntityTypeConfiguration<Consumo>
     {
