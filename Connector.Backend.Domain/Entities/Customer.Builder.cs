@@ -3,7 +3,7 @@ using System;
 using Tnf.Builder;
 using Tnf.Notifications;
 
-namespace BasicCrud.Domain.Entities
+namespace Connector.Backend.Domain.Entities
 {
     public partial class Customer
     {
@@ -19,7 +19,7 @@ namespace BasicCrud.Domain.Entities
             {
             }
 
-            public Builder WithId(Guid id)
+            public Builder WithId(long id)
             {
                 Instance.Id = id;
                 return this;

@@ -1,4 +1,5 @@
-﻿using Connector.Backend.Domain.Entities;
+﻿using Connector.Backend.Domain.Configurations;
+using Connector.Backend.Domain.Entities;
 using Connector.Backend.Domain.Interfaces.Repositories;
 using Connector.Backend.Domain.Interfaces.Services;
 using System;

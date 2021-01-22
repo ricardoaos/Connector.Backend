@@ -1,4 +1,5 @@
-﻿using Microsoft.Build.Tasks.Deployment.Bootstrapper;
+﻿using Connector.Backend.Domain.Configurations;
+using Microsoft.Build.Tasks.Deployment.Bootstrapper;
 using System;
 using System.Linq.Expressions;
 using Tnf.Specifications;

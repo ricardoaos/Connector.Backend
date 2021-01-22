@@ -19,7 +19,7 @@ namespace Connector.Backend.Domain.Entities
             {
             }
 
-            public Builder WithId(Guid id)
+            public Builder WithId(long id)
             {
                 Instance.Id = id;
                 return this;

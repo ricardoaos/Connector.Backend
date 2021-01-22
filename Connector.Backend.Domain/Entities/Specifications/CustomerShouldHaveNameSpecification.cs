@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
+using Connector.Backend.Domain.Configurations;
+using Connector.Backend.Domain.Entities;
 using Tnf.Specifications;
 
 namespace BasicCrud.Domain.Entities.Specifications
