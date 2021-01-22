@@ -53,7 +53,7 @@ namespace Connector.Backend.API
                     // Configura a connection string da aplicação
                     options.DefaultConnectionString(DatabaseConfiguration.ConnectionString);
 
-                    options.EnableDevartPostgreSQLDriver();
+                    //options.EnableDevartPostgreSQLDriver();
 
                     // Habita o suporte ao multitenancy
                     options.MultiTenancy(tenancy => tenancy.IsEnabled = true);
