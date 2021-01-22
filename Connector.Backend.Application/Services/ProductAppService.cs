@@ -1,11 +1,11 @@
-﻿using Connector.Backend.Application.Services.Interfaces;
+﻿using Connector.Backend.Application.Interfaces;
 using Connector.Backend.Domain.Entities;
 using Connector.Backend.Domain.Interfaces.Repositories;
 using Connector.Backend.Domain.Interfaces.Services;
 using Connector.Backend.DTO;
 using Connector.Backend.DTO.Product;
 using Connector.Backend.Infra.ReadInterfaces;
-using Connector.Backend.Application.Interfaces.;
+using Connector.Backend.Application.Interfaces;
 using Microsoft.AspNetCore.JsonPatch;
 using System;
 using System.Threading.Tasks;

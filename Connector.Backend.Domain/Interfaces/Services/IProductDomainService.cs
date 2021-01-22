@@ -1,4 +1,5 @@
 ﻿using Connector.Backend.Domain.Entities;
+using Microsoft.Build.Tasks.Deployment.Bootstrapper;
 using System;
 using System.Threading.Tasks;
 using Tnf.Domain.Services;
