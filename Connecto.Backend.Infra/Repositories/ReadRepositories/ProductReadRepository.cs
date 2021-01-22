@@ -29,7 +29,7 @@ namespace Connector.Backend.Infra.Repositories.ReadRepositories
             return entity;
         }
 
-        public async Task<Product> GetProductAsync(Guid id)
+        public async Task<Product> GetProductAsync(long id)
         {
             var entity = await FirstOrDefaultAsync(p => p.Id == id);
 

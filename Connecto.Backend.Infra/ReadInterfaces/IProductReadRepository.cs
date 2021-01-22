@@ -13,7 +13,7 @@ namespace Connector.Backend.ReadInterfaces
     {
         Task<Product> GetProductAsync(DefaultRequestDto key);
 
-        Task<Product> GetProductAsync(Guid id);
+        Task<Product> GetProductAsync(long id);
 
         Task<IListDto<ProductDto>> GetAllProductsAsync(ProductRequestAllDto key);
     }
