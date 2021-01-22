@@ -1,7 +1,7 @@
 ﻿using System;
 using Tnf.Dto;
 
-namespace Connector.Backend.Dto.Customer
+namespace Connector.Backend.DTO.Customer
 {
     public class CustomerDto : BaseDto
     {

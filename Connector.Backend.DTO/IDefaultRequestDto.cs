@@ -5,6 +5,6 @@ namespace Connector.Backend.DTO
 {
     public interface IDefaultRequestDto : IRequestDto
     {
-        Guid Id { get; set; }
+        long Id { get; set; }
     }
 }

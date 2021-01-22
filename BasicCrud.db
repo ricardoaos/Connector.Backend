@@ -1,0 +1,21 @@
+SQLite format 3@  .4 
+ø
+Ò­Ÿ
+
+Ö4‚;tableProductsProductsCREATE TABLE "Products" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Products" PRIMARY KEY,
+    "Description" TEXT NOT NULL,
+    "Value" REAL NOT NULL
+)/Cindexsqlite_autoindex_Products_1ProductsytableCustomersCustomersCREATE TABLE "Customers" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Customers" PRIMARY KEY,
+    "Name" TEXT NOT NULL
+)1Eindexsqlite_autoindex_Customers_1CustomersX77‚Otable__EFMigrationsHistory__EFMigrationsHistoryCREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+)I]7indexsqlite_autoindex___EFMigrationsHistory_1__EFMigrationsHistory
+ÙÙ%G20191010202021_CreateDatabase3.1.4
+ßß G	20191010202021_CreateDatabase
+ÒÒ,UE7EB677D-D17C-4815-91E2-A988E3E9E74EJamir
+ØØ'U	E7EB677D-D17C-4815-91E2-A988E3E9E74E
+ÎÎ0U625EADD8-B592-4622-83E0-77A3BCEEEBDAFogÃ£oÖ
+ØØ'U	625EADD8-B592-4622-83E0-77A3BCEEEBDA

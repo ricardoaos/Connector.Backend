@@ -17,7 +17,7 @@ namespace Connector.Backend.Infra.SqlServer
                 .AddInfraDependency()
                 .AddTnfDbContext<CrudDbContext, SqlServerCrudDbContext>((config) =>
                 {
-                    if (Constants.IsDevelopment())
+                    if (Connector.Backend.Domain.Constants.IsDevelopment())
                     {
                         config.DbContextOptions.EnableSensitiveDataLogging();
                         config.UseLoggerFactory();

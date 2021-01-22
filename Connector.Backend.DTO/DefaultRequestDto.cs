@@ -9,18 +9,18 @@ namespace Connector.Backend.DTO
         {
         }
 
-        public DefaultRequestDto(Guid id, RequestDto request)
+        public DefaultRequestDto(long id, RequestDto request)
         {
             Id = id;
             Fields = request.Fields;
             Expand = request.Expand;
         }
 
-        public DefaultRequestDto(Guid id)
+        public DefaultRequestDto(long id)
         {
             Id = id;
         }
 
-        public Guid Id { get; set; }
+        public long Id { get; set; }
     }
 }

@@ -53,6 +53,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connector.Backend.Infra.Sql
 		{CE21AB6F-C350-4135-8D97-2914F53420C8} = {CE21AB6F-C350-4135-8D97-2914F53420C8}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connector.Backend.Web", "Connector.Backend.Web\Connector.Backend.Web.csproj", "{E9A0F8A2-8597-492E-9037-350D375C94B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08 - Web", "08 - Web", "{F5AD1C70-2706-477D-A53E-5EAFCFFEC35B}"
+	ProjectSection(SolutionItems) = preProject
+		appsettings.Development.json = appsettings.Development.json
+		appsettings.Production.json = appsettings.Production.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +111,10 @@ Global
 		{F48CE096-59B1-4088-9116-032EE3550C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F48CE096-59B1-4088-9116-032EE3550C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F48CE096-59B1-4088-9116-032EE3550C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9A0F8A2-8597-492E-9037-350D375C94B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A0F8A2-8597-492E-9037-350D375C94B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A0F8A2-8597-492E-9037-350D375C94B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A0F8A2-8597-492E-9037-350D375C94B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -120,6 +132,7 @@ Global
 		{D5803E1A-E3FE-47B3-8BD8-5590F35F82C8} = {DE8DC05D-36B8-47A0-A906-978EF25D3659}
 		{61AA87A0-18E2-47C3-9CC3-01D05E5A4155} = {946126AE-87CE-408E-8142-DB95350D91D5}
 		{F48CE096-59B1-4088-9116-032EE3550C73} = {9A3A38AB-9440-4CDE-933F-9F3F261B673A}
+		{E9A0F8A2-8597-492E-9037-350D375C94B2} = {F5AD1C70-2706-477D-A53E-5EAFCFFEC35B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FFC0CBB6-D20D-47E8-AC65-7A3061DE9167}

@@ -2,7 +2,7 @@
 
 namespace Connector.Backend.DTO.Customer
 {
-    public class IDefaultRequestDto : RequestAllDto
+    public class CustomerRequestAllDto : RequestAllDto
     {
         public string Name { get; set; }
     }

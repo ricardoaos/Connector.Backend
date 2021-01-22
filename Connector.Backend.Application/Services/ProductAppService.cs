@@ -142,7 +142,7 @@ namespace BasicCrud.Application.Services
 
         public async Task<ProductDto> GetProductAsync(DefaultRequestDto id)
         {
-            if (!ValidateRequestDto(id) || !ValidateId<Guid>(id.Id))
+            if (!ValidateRequestDto(id) || !ValidateId<long>(id.Id))
                 return null;
 
             var entity = await _readRepository.GetProductAsync(id);

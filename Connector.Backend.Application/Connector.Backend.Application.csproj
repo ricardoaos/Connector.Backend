@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Connecto.Backend.Infra\Connector.Backend.Infra.csproj" />
     <ProjectReference Include="..\Connector.Backend.Domain\Connector.Backend.Domain.csproj" />
+    <ProjectReference Include="..\Connector.Backend.DTO\Connector.Backend.DTO.csproj" />
   </ItemGroup>
 
 </Project>
