@@ -5,6 +5,7 @@ using Connector.Backend.Domain.Configurations;
 using Connector.Backend.Domain.Interfaces;
 using Connector.Backend.DTO.Requests;
 using Connector.Backend.Infra;
+using Connector.Backend.Infra.SqlServer;
 //using Connector.Backend.Infra.Data.Context.Configurations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -60,6 +61,11 @@ namespace Connector.Backend.API
                 })
                 .AddTnfAspNetCoreSecurity(Configuration);
 
+            services.AddSingleton(DatabaseConfiguration);
+
+            if (DatabaseConfiguration.DatabaseType == DatabaseType.SqlServer)
+                services.AddSqlServerDependency();
+
             services.AddSingleton(RacConfiguration);
             services.AddHostedService<MigrationHostedService>();
 
@@ -67,7 +73,7 @@ namespace Connector.Backend.API
                 .AddResponseCompression()
                 .AddSwaggerGen(c =>
                 {
-                    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Fiscal Prime API", Version = "v1" });
+                    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Connector API", Version = "v1" });
                     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                     {
                         Name = "Authorization",

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Connector.Backend.API</name>
+    </assembly>
+    <members>
+        <member name="M:Connector.Backend.API.Controllers.ConsumoController.GetAll(System.String,Connector.Backend.Shared.Constants.Dominio,System.String)">
+            <summary>
+            Get all
+            </summary>
+            <returns>List</returns>
+        </member>
+    </members>
+</doc>
