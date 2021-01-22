@@ -5,7 +5,7 @@ namespace Connector.Backend.Domain.Entities
 {
     public partial class Product : IEntity
     {
-        public Guid Id { get; set; }
+        public long Id { get; set; }
         public string Description { get; set; }
 
         public float Value { get; set; }

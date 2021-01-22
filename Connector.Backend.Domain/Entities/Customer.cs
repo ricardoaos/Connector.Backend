@@ -5,7 +5,7 @@ namespace Connector.Backend.Domain.Entities
 {
     public partial class Customer : IEntity
     {
-        public Guid Id { get; set; }
+        public long Id { get; set; }
         public string Name { get; internal set; }
 
         public static Builder Create(INotificationHandler handler)
