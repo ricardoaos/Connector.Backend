@@ -14,5 +14,7 @@ namespace Connector.Backend.Domain.Interfaces.Repositories
     public interface IConsumoRepository : IRepository
     {
         Task<IListDto<ConsumoDTO>> GetAllAsync(SearchRequestAllDTO request);
+        Task<IListDto<ConsumoDTO>> GetAllWithDomain(ConsumoRequestAllDTO request);
+        Task<ConsumoDTO> GetAsync(DefaultRequestDto key);
     }
 }

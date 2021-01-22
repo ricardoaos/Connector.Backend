@@ -37,7 +37,6 @@
   <ItemGroup>
     <Folder Include="logs\" />
     <Folder Include="Rpt\" />
-    <Folder Include="Views\Relatorios\" />
   </ItemGroup>
 
 

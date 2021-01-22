@@ -8,6 +8,6 @@ namespace Connector.Backend.Domain.Interfaces.DomainServices
 {
     public interface IConsumoDomainService : IDomainService
     {
-        //Task<IListDto<ConsumoDTO>> GetAllWithDomain(ConsumoRequestAllDTO request);
+        Task<IListDto<ConsumoDTO>> GetAllWithDomain(ConsumoRequestAllDTO request);
     }
 }

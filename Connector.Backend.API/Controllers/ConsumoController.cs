@@ -1,7 +1,7 @@
 ﻿using Connector.Backend.Shared;
 using Connector.Backend.Application.Interfaces;
 using Connector.Backend.DTO.DTOs;
-using Connector.Backend.DTO.Requests.Consumo;
+using Connector.Backend.DTO.Requests.RequestAll;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;

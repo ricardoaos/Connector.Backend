@@ -23,8 +23,12 @@ namespace Connector.Backend.Domain.DomainServices
         }
       
         public async virtual Task<IListDto<ConsumoDTO>> GetAllAsync(SearchRequestAllDTO request) =>
-            await _repository.GetAllAsync(request); 
+            await _repository.GetAllAsync(request);
 
+        public async virtual Task<IListDto<ConsumoDTO>> GetAllWithDomain(ConsumoRequestAllDTO request)
+        {
+            return await _repository.GetAllWithDomain(request);
+        }
 
         protected Consumo BuildEntity(Consumo.Builder builder) =>
             builder.Build();
