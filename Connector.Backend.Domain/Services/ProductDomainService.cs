@@ -19,7 +19,7 @@ namespace Connector.Backend.Domain.Services
             _repository = repository;
         }
 
-        public Task DeleteProductAsync(Guid id) => _repository.DeleteProductAsync(id);
+        public Task DeleteProductAsync(long id) => _repository.DeleteProductAsync(id);
 
         public async Task<Product> InsertProductAsync(Product.Builder builder)
         {

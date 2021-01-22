@@ -4,7 +4,6 @@ using Connector.Backend.Domain.Interfaces.Repositories;
 using Connector.Backend.Domain.Interfaces.Services;
 using Connector.Backend.DTO;
 using Connector.Backend.DTO.Product;
-using Connector.Backend.Infra.ReadInterfaces;
 using Connector.Backend.Application.Interfaces;
 using Microsoft.AspNetCore.JsonPatch;
 using System;
@@ -13,6 +12,8 @@ using Tnf.Application.Services;
 using Tnf.Dto;
 using Tnf.Notifications;
 using Tnf.Repositories.Uow;
+using Connector.Backend.Application.Services.Interfaces;
+using Connector.Backend.ReadInterfaces;
 
 namespace BasicCrud.Application.Services
 {
@@ -61,7 +62,7 @@ namespace BasicCrud.Application.Services
             return entity.MapTo<ProductDto>();
         }
 
-        public async Task<ProductDto> UpdateProductAsync(Guid id, ProductDto dto)
+        public async Task<ProductDto> UpdateProductAsync(long id, ProductDto dto)
         {
             if (!ValidateDtoAndId(dto, id))
                 return null;
@@ -82,7 +83,7 @@ namespace BasicCrud.Application.Services
             return dto;
         }
 
-        public async Task<ProductDto> PatchProductAsync(Guid id, JsonPatchDocument productPatch)
+        public async Task<ProductDto> PatchProductAsync(long id, JsonPatchDocument productPatch)
         {
             var product = await _readRepository.GetProductAsync(id);
 
@@ -126,7 +127,7 @@ namespace BasicCrud.Application.Services
             return products;
         }
 
-        public async Task DeleteProductAsync(Guid id)
+        public async Task DeleteProductAsync(long id)
         {
             if (!ValidateId(id))
                 return;

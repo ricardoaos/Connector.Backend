@@ -1,9 +1,10 @@
 ﻿using Connector.Backend.Domain.Interfaces.Repositories;
-using Connector.Backend.Infra.ReadInterfaces;
+using Connector.Backend.ReadInterfaces;
 using Connector.Backend.Infra.Repositories.ReadRepositories;
 using Microsoft.Extensions.DependencyInjection;
+using Connector.Backend.Infra;
 
-namespace BasicCrud.Infra
+namespace Connector.Backend.Infra
 {
     public static class ServiceCollectionExtensions
     {

@@ -13,6 +13,6 @@ namespace Connector.Backend.Domain.Interfaces.Services
 
         Task<Product> UpdateProductAsync(Entities.Product.Builder builder);
 
-        Task DeleteProductAsync(Guid id);
+        Task DeleteProductAsync(long id);
     }
 }

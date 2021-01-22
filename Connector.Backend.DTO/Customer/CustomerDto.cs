@@ -1,9 +1,9 @@
 ﻿using System;
 using Tnf.Dto;
 
-namespace Connector.Backend.DTO.Customer
+namespace Connector.Backend.Dto.Customer
 {
-    public class DefaultRequestDto : BaseDto
+    public class CustomerDto : BaseDto
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

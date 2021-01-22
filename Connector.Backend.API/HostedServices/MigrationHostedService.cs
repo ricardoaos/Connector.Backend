@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Connector.Backend.Infra.Context;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
@@ -21,7 +23,7 @@ namespace Connector.Backend.API.HostedServices
         {
             using var scope = _serviceScopeFactory.CreateScope();
 
-            var crudDbContext = scope.ServiceProvider.GetService<ConsumoDbContext>();
+            var crudDbContext = scope.ServiceProvider.GetService<CrudDbContext>();
             await crudDbContext.Database.MigrateAsync();
         }
 

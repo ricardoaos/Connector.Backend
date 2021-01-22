@@ -2,7 +2,7 @@
 using Connector.Backend.DTO;
 using Connector.Backend.DTO.Product;
 using Connector.Backend.Infra.Context;
-using Connector.Backend.Infra.ReadInterfaces;
+using Connector.Backend.ReadInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

@@ -1,4 +1,5 @@
-﻿using Connector.Backend.Domain;
+﻿using BasicCrud.Infra.SqlServer.Context;
+using Connector.Backend.Domain;
 using Connector.Backend.Domain.Configurations;
 using Connector.Backend.Infra.Context;
 using Connector.Backend.Infra.SqlServer.Context;

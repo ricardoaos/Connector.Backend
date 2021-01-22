@@ -1,9 +1,10 @@
-using Connector.Backend.Domain.Entities;
+ï»¿using Connector.Backend.Domain.Entities;
 using Connector.Backend.Infra.Context;
 using Connector.Backend.DTO;
 using Microsoft.EntityFrameworkCore;
 using Tnf.EntityFrameworkCore;
 using Tnf.Runtime.Session;
+using Connector.Backend.Infra.Context.Builders;
 
 namespace Connector.Backend.Infra.Context
 {
@@ -13,7 +14,7 @@ namespace Connector.Backend.Infra.Context
 
         public DbSet<Product> Products { get; set; }
 
-        // Importante o construtor do contexto receber as opções com o tipo generico definido: DbContextOptions<TDbContext>
+        // Importante o construtor do contexto receber as opÃ§Ãµes com o tipo generico definido: DbContextOptions<TDbContext>
         public CrudDbContext(DbContextOptions<CrudDbContext> options, ITnfSession session)
             : base(options, session)
         {

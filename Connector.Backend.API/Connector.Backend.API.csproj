@@ -31,7 +31,6 @@
     <ProjectReference Include="..\Connecto.Backend.Infra\Connector.Backend.Infra.csproj" />
     <ProjectReference Include="..\Connector.Backend.Application\Connector.Backend.Application.csproj" />
     <ProjectReference Include="..\Connector.Backend.DTO\Connector.Backend.DTO.csproj" />
-    <ProjectReference Include="..\Connector.Backend.Infra.Data.SQLServer\Connector.Backend.Infra.Data.SQLServer.csproj" />
   </ItemGroup>
 
   <ItemGroup>

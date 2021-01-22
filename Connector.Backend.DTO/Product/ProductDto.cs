@@ -4,7 +4,7 @@ namespace Connector.Backend.DTO.Product
 {
     public class ProductDto : BaseDto
     {
-        public Guid Id { get; set; }
+        public long Id { get; set; }
 
         public string Description { get; set; }
 

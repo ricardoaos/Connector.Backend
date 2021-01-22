@@ -1,8 +1,10 @@
-using Connector.Backend.API.HostedServices;
+ï»¿using Connector.Backend.API.HostedServices;
 using Connector.Backend.API.Middleware;
+using Connector.Backend.Application;
 using Connector.Backend.Domain.Configurations;
 using Connector.Backend.Domain.Interfaces;
 using Connector.Backend.DTO.Requests;
+using Connector.Backend.Infra;
 //using Connector.Backend.Infra.Data.Context.Configurations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,20 +37,20 @@ namespace Connector.Backend.API
                 .AddApplicationServiceDependency()
                 .AddTnfAspNetCore(options =>
                 {
-                    // Adiciona as configurações de localização da aplicação
+                    // Adiciona as configuraÃ§Ãµes de localizaÃ§Ã£o da aplicaÃ§Ã£o
                     options.UseDomainLocalization();
 
-                    // Configuração global de como irá funcionar o Get utilizando o repositorio do Tnf
-                    // O exemplo abaixo registra esse comportamento através de uma convenção:
-                    // toda classe que implementar essas interfaces irão ter essa configuração definida
-                    // quando for consultado um método que receba a interface IRequestDto do Tnf
+                    // ConfiguraÃ§Ã£o global de como irÃ¡ funcionar o Get utilizando o repositorio do Tnf
+                    // O exemplo abaixo registra esse comportamento atravÃ©s de uma convenÃ§Ã£o:
+                    // toda classe que implementar essas interfaces irÃ£o ter essa configuraÃ§Ã£o definida
+                    // quando for consultado um mÃ©todo que receba a interface IRequestDto do Tnf
                     options.Repository(repositoryConfig =>
                     {
                         repositoryConfig.Entity<IEntity>(entity =>
                             entity.RequestDto<IDefaultRequestDto>((e, d) => e.Id == d.Id));
                     });
 
-                    // Configura a connection string da aplicação
+                    // Configura a connection string da aplicaÃ§Ã£o
                     options.DefaultConnectionString(DatabaseConfiguration.ConnectionString);
 
                     options.EnableDevartPostgreSQLDriver();

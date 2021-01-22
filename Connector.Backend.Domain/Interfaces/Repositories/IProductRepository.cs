@@ -13,6 +13,6 @@ namespace Connector.Backend.Domain.Interfaces.Repositories
 
         Task<Product> UpdateProductAsync(Product product, params Expression<Func<Product, object>>[] changedProperties);
 
-        Task DeleteProductAsync(Guid id);
+        Task DeleteProductAsync(long id);
     }
 }
