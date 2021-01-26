@@ -36,26 +36,13 @@ namespace BasicCrud.Web
             {
                 builder.UseDomainLocalization();
 
-                // Configuração global de como irá funcionar o Get utilizando o repositorio do Tnf
-                // O exemplo abaixo registra esse comportamento através de uma convenção:
-                // toda classe que implementar essas interfaces irão ter essa configuração definida
-                // quando for consultado um método que receba a interface IRequestDto do Tnf
                 builder.Repository(repositoryConfig =>
                 {
                     repositoryConfig.Entity<IEntity>(entity =>
                         entity.RequestDto<IDefaultRequestDto>((e, d) => e.Id == d.Id));
                 });
 
-                // Configura a connection string da aplicação
                 builder.DefaultConnectionString(DatabaseConfiguration.ConnectionString);
-
-                // Altera o default isolation level para Unspecified (SqlLite não trabalha com isolationLevel)
-                //options.UnitOfWorkOptions().IsolationLevel = IsolationLevel.Unspecified;
-
-                // Altera o default isolation level para ReadCommitted (ReadUnCommited not supported by Devart)
-                //options.UnitOfWorkOptions().IsolationLevel = IsolationLevel.ReadCommitted;
-
-                // Habilita o driver Oracle da Devart (DotConnect for Oracle)
             });
 
             services.AddSingleton(DatabaseConfiguration);

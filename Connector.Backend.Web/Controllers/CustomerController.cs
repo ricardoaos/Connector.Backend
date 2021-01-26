@@ -83,7 +83,7 @@ namespace Connector.Backend.Web.Controllers
         [HttpPut("{id}")]
         [ProducesResponseType(typeof(CustomerDto), 200)]
         [ProducesResponseType(typeof(ErrorResponse), 400)]
-        public async Task<IActionResult> Put(Guid id, [FromBody]CustomerDto customerDto)
+        public async Task<IActionResult> Put(long id, [FromBody]CustomerDto customerDto)
         {
             customerDto = await _appService.UpdateAsync(id, customerDto);
 
