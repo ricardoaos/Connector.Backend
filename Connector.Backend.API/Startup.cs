@@ -38,7 +38,7 @@ namespace Connector.Backend.API
                 .AddApplicationServiceDependency()
                 .AddTnfAspNetCore(options =>
                 {
-                    // Adiciona as configurações de localização da aplicação
+                    //Adiciona as configurações de localização da aplicação
                     options.UseDomainLocalization();
 
                     // Configuração global de como irá funcionar o Get utilizando o repositorio do Tnf

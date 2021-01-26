@@ -5,6 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Localization\SourceFiles\Connector-en.json" />
+    <None Remove="Localization\SourceFiles\Connector-pt-BR.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\SourceFiles\Connector-en.json" />
+    <EmbeddedResource Include="Localization\SourceFiles\Connector-pt-BR.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="3.1.8" />
     <PackageReference Include="Microsoft.Build.Tasks.Core" Version="16.8.0" />
     <PackageReference Include="Tnf.Domain" Version="3.2.0.31002" />
