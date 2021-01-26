@@ -12,7 +12,7 @@ namespace Connector.Backend.Application.Services.Interfaces
         Task<IListDto<CustomerDto>> GetAllAsync(CustomerRequestAllDto request);
         Task<CustomerDto> GetAsync(DefaultRequestDto request);
         Task<CustomerDto> CreateAsync(CustomerDto customerDto);
-        Task<CustomerDto> UpdateAsync(Guid id, CustomerDto customerDto);
+        Task<CustomerDto> UpdateAsync(long id, CustomerDto customerDto);
         Task DeleteAsync(Guid id);
     }
 }
